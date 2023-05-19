@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap');
+
+body{
+  font-family: 'IBM Plex Mono', monospace;
+  background-image: radial-gradient(circle, #325153, #295b5a, #20645e, #186e5f, #17775d, #0c7966, #027b6f, #007c77, #007489, #006a98, #005c9f, #414997);
+}
+
+.rock{
+  background-image: linear-gradient(to top, #c79081, #cd9586, #d49a8b, #daa090, #e1a595);
+}
+
+.ghost{
+  background-image: linear-gradient(to top, #e9e9e9, #eeeeee, #f4f4f4, #f9f9f9, #ffffff);
+}
+
+.electric{
+  background-image: linear-gradient(to top, #ff9b00, #fda900, #f9b800, #f5c500, #f0d313);
+}
+
+.bug{
+  background-image: linear-gradient(to top, #8e803b, #a18d40, #b49944, #c9a649, #deb24f);
+}
+
+.poison{
+  background-image: linear-gradient(to top, #c9f3ff, #b7e9ff, #b8dcff, #cfc9ff, #f1b1ff);
+}
+
+.normal{
+  background-image: linear-gradient(to top, #fff8fe, #f7f3f8, #f0eef1, #e9e8ea, #e3e3e3);
+}
+
+.fairy{
+  background-image: linear-gradient(to top, #e37dda, #e488e4, #e692ed, #e79cf6, #e8a6ff);
+}
+
+.fire{
+  background-image: linear-gradient(to top, #fd2d02, #fe5626, #fd7342, #fc8c5e, #f9a27b);
+}
+
+.grass{
+  background-image: linear-gradient(to top, #4b711a, #568c29, #60a93a, #66c64d, #68e562);
+}
+
+.water{
+  background-image: linear-gradient(to top, #02bcfd, #3ebcfd, #58bcfc, #6bbdfb, #7bbdf9);
+}
+
+.ground{
+  background-image: linear-gradient(to top, #4f300e, #5e3f15, #6d4e1d, #7b5f24, #89702d);
+}
+
+.fighting{
+  background-image: linear-gradient(to top, #2644af, #073886, #022a5d, #0a1c36, #050912);
+}
+
+.psychic{
+  background-image: linear-gradient(to top, #55473a, #523833, #492a34, #352139, #0f1d3b);
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 16px;
+}
+
+main h1{
+  color: #d0ffd3;
+}
+
+.pokemons{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemon_card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 4px;
+  margin: 5px;
+  border-radius: 32px;
+  width: 230px;
+  text-align: center;
+}
+
+.pokemon_card:hover{
+  box-shadow: 5px 5px 23px 5px rgba(0,0,0,1);
+  transition: all 0.5s ease-in-out;
+}
+
+h2{
+  margin-bottom: 2px;
+}
+
+h3{
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+p{
+  margin: 5px;
+}
+
+.pokemon_card .number{
+  margin-right: auto;
+  margin-left: 10px;
+  border-radius: 10px;
+  width: 35px;
+  height: 25px;
+  background-color:#d0ffd3;
+}
+
+.pokemon_card img{
+  width: 150px;
+  height: 150px;
+}
+
+.pokemon_card img:hover{
+  transform: scale(1.4);
+}
+
+.more_btn{
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color:transparent;
+  margin: 20px;
+  font-family: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.more_btn::after{
+  content: "";
+  background-color: #d0ffd3;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+}
+
+.more_btn:hover::after{
+  top: 0px;
+  left: 0px;
+  transition: all 0.4s ease-in-out;
+}
+
+.stats_btn{
+  width: 120px;
+  height: 40px;
+  border-radius: 50px;
+  box-shadow: 0 20px 30px -6px#d0ffd3;
+  transition: all 0.4s ease-in-out;
+  margin: 0 25px;
+  background-image: linear-gradient(180deg, #d0ffd3 0%, #28a530 100%);
+  border:none;
+  margin-top: 20px;
+  font-family: 'IBM Plex Mono', monospace;
+  cursor: pointer;
+}
+
+.stats_btn:hover{
+  transform: translateY(3px);
+  box-shadow: none;
+}
+
+.stats_btn:active{
+  opacity: 0.5;
+}
+
